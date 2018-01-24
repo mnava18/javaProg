@@ -1,0 +1,32 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class dupeChar {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<String> dupe = new ArrayList<String>();
+	       // hasset to remove the dupes
+	        HashSet<String> set = new HashSet<String>();
+		// get the dupes of single chars of a single string
+		 String array = "tryuiotry";
+		 for(char ch : array.toCharArray()){
+			 if(!set.add(array))// if it is not a dupe , it can be added to the set, IE this statement is true. so , if this statement is false (ie , its a dupe) , then its a dupe.
+	            {
+	            	//if it can be adde to the hashset , this is true and is not a dupe
+	            	// so we check if its false,ie. if it doesnt get added to the hashset, its false and is a dupe
+	               System.out.println("Duplicate Element is : "+array);
+	                dupe.add(array);
+	                
+	            }   
+			 
+			 
+			 
+		 }
+	        
+	        
+	        
+	}
+
+}

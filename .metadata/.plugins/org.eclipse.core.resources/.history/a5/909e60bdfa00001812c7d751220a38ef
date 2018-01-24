@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+public class dupeChar {
+
+	public static void main(String[] args) {
+		//WE USED A HASH MAP
+		// get the dupes of single chars of a single string
+		 String array = "tryuiotry";
+	        ArrayList<String> dupe = new ArrayList<String>();
+	       // hasset to remove the dupes
+	        
+	        HashMap<Character, Integer> charCountMap = new HashMap<Character, Integer>();
+
+	        
+	        char[] strArray = array.toCharArray();//convert the string into a char aray so
+	         // we can look at each char to find dupes
+	        for (char c : strArray)  //checking each char of strArray
+	        {
+	        	
+	        	if(charCountMap.containsKey(c))
+				{
+					//If char is present in charCountMap, incrementing it's count by 1
+
+					charCountMap.put(c, charCountMap.get(c)+1);
+				}
+				else
+				{
+					//If char is not present in charCountMap,
+					//putting this char to charCountMap with 1 as it's value
+
+					charCountMap.put(c, 1);
+				}
+			}
+	        	
+	        	
+	        	
+	        }
+	        }
+
+	}
+

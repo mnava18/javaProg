@@ -1,0 +1,43 @@
+
+import java.util.ArrayList;
+import java.util.HashSet;
+ 
+public class practice 
+{   
+    public static void main(String[] args) 
+    {
+        String[] strArray = {"abc", "def", "mno", "xyz", "pqr", "xyz", "def"};
+        // mae an array list to hol the dupes
+        ArrayList<String> dupe = new ArrayList<String>();
+       // hasset to remove the dupes
+        HashSet<String> set = new HashSet<String>();
+ 
+        for (String arrayElement : strArray)//for each loop that traverses the string array
+        	//your using a condition to check ,  IE if its true/false
+        	// so if set adds the array element , its true and not a dupe
+        	// if it doesnt add it to the hashset , its false and is a dupe
+        {
+            if(!set.add(arrayElement))// if it is not a dupe , it can be added to the set, IE this statement is true. so , if this statement is false (ie , its a dupe) , then its a dupe.
+            {
+            	//if it can be adde to the hashset , this is true and is not a dupe
+            	// so we check if its false,ie. if it doesnt get added to the hashset, its false and is a dupe
+                System.out.println("Duplicate Element is : "+arrayElement);
+                dupe.add(arrayElement);
+                
+            }
+            set.add(arrayElement);
+            System.out.println("is not a dupe : "+set); 
+        }
+        
+        for (String item : dupe){
+        	//System.out.println(" dupe "+item);
+        	
+        }
+        for (String item : set){
+        	//System.out.println("not a dupe "+item);
+        	
+        }
+    }
+   
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;charCountMap&apos; in &apos;dupesString.main(...)&apos; to &apos;stringCountMap&apos;&#x0D;&#x0A;- Original project: &apos;HomeProjects&apos;&#x0D;&#x0A;- Original element: &apos;dupesString.main(String[]).charCountMap&apos;&#x0D;&#x0A;- Renamed element: &apos;charCountMap&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;charCountMap&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{dupesString.java[dupesString~main~\[QString;@charCountMap!236!306!261!272!QHashMap\&lt;QString;QInteger;&gt;;!0!false" name="stringCountMap" references="true" stamp="1516794873349" version="1.0"/>
+</session>

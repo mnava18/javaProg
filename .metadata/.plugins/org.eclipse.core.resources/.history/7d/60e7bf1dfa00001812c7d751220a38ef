@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+
+public class dupeChar {
+
+	public static void main(String[] args) {
+		
+		// get the dupes of single chars of a single string
+		 String array = "tryuiotry";
+	        ArrayList<String> dupe = new ArrayList<String>();
+	       // hasset to remove the dupes
+	        HashSet<String> set = new HashSet<String>();
+	        
+	        char[] strArray = array.toCharArray();
+	        for(char ch: strArray){
+	       
+	        System.out.println(strArray);
+	        }
+
+	}
+
+}

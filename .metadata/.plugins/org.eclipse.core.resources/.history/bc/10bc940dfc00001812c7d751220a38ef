@@ -1,0 +1,48 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
+
+/*
+ We use HashMap and Set to find the duplicate characters in a string.
+  First, we convert the given string to char array. We then create one HashMap with Character as a key and 
+  it’s number of occurrences as a value. Then we extract a Set containing all keys of this HashMap using
+   keySet() method. Then we use this keySet to get the duplicate characters i.e characters which have appeared
+    more than once in the given string.
+ */
+
+public class dupeChar {
+
+	public static void main(String[] args) {
+		//WE USED A HASH MAP
+		// get the dupes of single chars of a single string
+		 String array = "tryuiotry";
+	     HashMap<Character, Integer> charCountMap = new HashMap<Character, Integer>();
+
+	        
+	        char[] strArray = array.toCharArray();//convert the string into a char aray so
+	         // we can look at each char to find dupes
+	        for (char c : strArray)  //checking each char of strArray
+	        {
+	        	
+	        	if(charCountMap.containsKey(c))
+				{
+					//If char is present in charCountMap, incrementing it's count by 1
+
+					charCountMap.put(c, charCountMap.get(c)+1);
+				}
+				else
+				{
+					//If char is not present in charCountMap,
+					//putting this char to charCountMap with 1 as it's value
+
+					charCountMap.put(c, 1);
+				}
+			}
+	        	
+	        	
+	        	
+	        }
+	        }
+
+
